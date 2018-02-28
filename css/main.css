@@ -1,6 +1,6 @@
 html {
   font-family: "Raleway", sans-serif;
-  font-weight: 600;
+  font-weight: 400;
   color: #fffef4;
 }
 
@@ -9,7 +9,7 @@ body {
 }
 
 strong {
-  font-weight: 400;
+  font-weight: 600;
 }
 
 .prev-next-rect {
@@ -51,6 +51,8 @@ a:active {
 
 .btn {
   background-color: #4f61ea;
+  font-weight: 400;
+  border-color: #4f61ea;
 }
 
 
@@ -68,7 +70,7 @@ a:active {
 .keyline {
   height: .1rem;
   width: 2rem;
-  background-color: #4f61ea;
+  background-color: #eeff41
 }
 
 .nav .current,
@@ -186,7 +188,7 @@ p {
   .keyline {
     height: .2rem;
     width: 3rem;
-    background-color: #4f61ea;
+    background-color: #eeff41;
   }
 
   .social-icon {
