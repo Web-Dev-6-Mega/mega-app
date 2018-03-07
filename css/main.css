@@ -253,4 +253,31 @@ p {
     opacity: 1;
     transform: translate(-50%, -50%);
   }
+
+html {
+   font-family: 'Raleway', sans-serif;
+}
+
+.banner {
+  position: relative;
+
+}
+
+.profile-photo {
+  width: 200px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
+
+.banner-img {
+  max-height: 400px;
+  overflow: hidden;
+}
+
+.info {
+  text-align: center;
+  margin-top: 6em;
+  master
 }
