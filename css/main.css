@@ -41,7 +41,7 @@ nav {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  z-index: 1;
+  z-index: 5001;
   border-bottom: 2px solid #4e77ea;
 }
 
@@ -106,7 +106,7 @@ nav {
   position: fixed;
   top: 0;
   right: -290px;
-  z-index: -1;
+  z-index: 5000;
   height: 100vh;
   background-color: #4e77ea;
   border-left: 2px solid #4e77ea;
@@ -146,7 +146,8 @@ nav {
 }
 
 .chat-2 {
-  background-color: #44aa53;
+  background-color: #eeff41;
+  color: #4e77ea;
 }
 
 .author {
@@ -173,13 +174,17 @@ nav {
   color: #e2e2e2;
 }
 
+.pad-t-spec {
+  padding-top: 3em;
+}
+
 @media only screen and (min-width: 25em) {
 
   .chat-open {
     left: -1px;
     min-width: 30px;
   }
-
+}
 =======
 html {
   font-family: "Raleway", sans-serif;
@@ -222,8 +227,6 @@ a:active {
   text-decoration: none;
 }
 
-
-
 .list-group-inline > dt {
   width: 4em;
 }
@@ -237,7 +240,6 @@ a:active {
   font-weight: 400;
   border-color: #4f61ea;
 }
-
 
 .banner-content {
   color: #f9f9f9;
@@ -335,7 +337,6 @@ p {
   bottom: 50px;
 }
 
-
  svg path {
   transition: fill 0.2s;
 }
@@ -352,7 +353,13 @@ p {
   padding-bottom: 8rem;
 }
 
-
+.profile-photo {
+  width: 200px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
 
 @media only screen and (min-width: 38em) {
 
@@ -399,9 +406,7 @@ p {
     right: 100px;
     bottom: 60px;
   }
-
 }
-
 
 @media (hover: hover) {
 
@@ -440,15 +445,6 @@ html {
 
 .banner {
   position: relative;
-
-}
-
-.profile-photo {
-  width: 200px;
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translate(-50%, 50%);
 }
 
 .banner-img {
