@@ -3,10 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link href="css/modules.css" rel="stylesheet">
-  <link href="css/grids.css" rel="stylesheet">
-  <link href="css/type.css" rel="stylesheet">
-  <link href="css/main.css" rel="stylesheet">
+  <link href="{{site.baseurl}}/css/site.css" rel="stylesheet">
 </head>
 <body>
 
@@ -15,17 +12,17 @@
 <header>
   <nav class="width-full white fixed">
     <div class="island-half inline">
-      <a href="#">
-        <img class="icon logo" src="images/logo.svg" alt="Co-operation logo." aria-describedby="A wordmark logo illustrating the core fundamentals of the Co-operation app. A chain link replaces the hyphen and holds the two sections of the word together. It's followed by the slogan 'Easing the Transition.'">
+      <a href="{{site.baseurl}}/">
+        <img class="icon logo" src="{{site.baseurl}}/images/logo.svg" alt="Co-operation logo." aria-describedby="A wordmark logo illustrating the core fundamentals of the Co-operation app. A chain link replaces the hyphen and holds the two sections of the word together. It's followed by the slogan 'Easing the Transition.'">
       </a>
     </div>
     <div class="island-half inline">
       <ul class="list-group-inline push-0">
         <li>
-          <a class="island-half nav-link" href="#">Profile</a>
+          <a class="island-half nav-link" href="{{site.baseurl}}/student-profile/">Student</a>
         </li>
         <li>
-          <a class="island-half nav-link" href="#">Favourites</a>
+          <a class="island-half nav-link" href="{{site.baseurl}}/employers/">Employers</a>
         </li>
         <li>
           <a class="island-half nav-link" href="#">Settings</a>
@@ -35,7 +32,7 @@
   </nav>
   <div class="chat-area chat">
     <label class="chat-label chat-open" for="chat-check">
-      <img class="img-flex" src="images/arrow-open.svg" alt="Open Navigation Button." aria-describedat="An arrow indicating the chat window opening if pressed.">
+      <img class="img-flex" src="{{site.baseurl}}/images/arrow-open.svg" alt="Open Navigation Button." aria-describedat="An arrow indicating the chat window opening if pressed.">
     </label>
     <div class="chat-area-bg island">
       <h3 class="milli move">
@@ -57,7 +54,8 @@
   </div>
 </header>
 
-<main class="">
+<main class="pad-t-spec">
+  {{content}}
 </main>
 
 <footer class="">
